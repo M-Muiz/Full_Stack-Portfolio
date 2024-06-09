@@ -52,17 +52,12 @@
 
 
 @layer base {
-  * {
-    @apply border-border;
-  }
-
   body {
-    @apply bg-background text-foreground;
+    @apply font-primary;
   }
 }
 
 body{
-  background-color: black;
+  background-color: #1c1c22;
+  color: white;
 }
-
-

@@ -5,8 +5,6 @@ export default function Home() {
   return (
  <main>homeape
 
-<Button>Hello World</Button>
-
  </main>
   );
 }
