@@ -8,7 +8,7 @@ import { MdDarkMode } from "react-icons/md";
 import { MdOutlineLightMode } from "react-icons/md";
 
 
-export function ModeToggle() {
+export function ToggleTheme() {
     const { setTheme, theme } = useTheme()
 console.log(theme)
 

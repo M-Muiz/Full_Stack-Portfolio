@@ -4,7 +4,7 @@ import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet"
 import { usePathname } from "next/navigation"
 import Link from "next/link";
 import { CiMenuFries } from "react-icons/ci"
-
+import { ToggleTheme } from "./ToggleTheme"
 
 const links = [
   {
@@ -49,6 +49,7 @@ const MobileNav = () => {
           {links.map((link, ind) => {
             return <Link className={`${link.path === pathname && "text-primary border-b-2 border-primary"} text-xl hover:text-primary transition-all capitalize`} href={link.path} key={ind}>{link.name}</Link>
           })}
+          <ToggleTheme />
         </nav>
 
       </SheetContent>
