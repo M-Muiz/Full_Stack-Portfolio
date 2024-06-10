@@ -52,6 +52,6 @@
 
 @layer base {
   body {
-    @apply font-primary text-black;
+    @apply font-primary text-black dark:text-primary-foreground;
   }
 }

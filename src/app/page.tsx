@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Home() {
   return (
  <main>
-  <p className="text-2xl text-primary dark:text-primary-foreground">
+  <p className="text-2xl  dark:text-primary-foreground">
   Home page
   </p>
 
