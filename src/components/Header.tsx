@@ -2,7 +2,8 @@ import React from 'react'
 import Link from 'next/link'
 import { Button } from './ui/button'
 import Nav from './Nav'
-
+import MobileNav from './MobileNav'
+import { ModeToggle } from './ToggleTheme'
 
 const Header = () => {
   return (
@@ -18,16 +19,15 @@ const Header = () => {
 
         <div className="hidden xl:flex items-center gap-8">
           <Nav />
-          <Link href="/contact">
-          <Button>Hire Me</Button>
-          </Link>
+       
+          <ModeToggle />
         </div>
 
 
 
-<div className="xl:hidden">
-mobile nav  
-</div>
+        <div className="xl:hidden">
+          <MobileNav />
+        </div>
 
 
       </div>
