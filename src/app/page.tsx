@@ -1,5 +1,6 @@
 import Photo from "@/components/Photo";
 import Socials from "@/components/Socials";
+import Stats from "@/components/Stats";
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi"
 
@@ -15,7 +16,7 @@ const page = () => {
             <p className="max-w-[500px] mb-9 text-black/80 dark:text-white/80">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni eius excepturi quasi earum praesentium facilis!</p>
 
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <Button variant="outline" size="lg" className="flex items-center gap-2 uppercase">
+              <Button size="lg" className="flex items-center gap-2 uppercase">
                 <span> Download CV</span>
                 <FiDownload className="text-xl" />
               </Button>
@@ -29,7 +30,8 @@ const page = () => {
             <Photo />
           </div>
         </div>
-      </div>
+      </div> 
+      <Stats />
     </section>
   )
 }

@@ -10,7 +10,6 @@ import { MdOutlineLightMode } from "react-icons/md";
 
 export function ToggleTheme() {
     const { setTheme, theme } = useTheme()
-console.log(theme)
 
     return (
 <>
