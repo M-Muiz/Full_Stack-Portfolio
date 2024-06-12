@@ -16,11 +16,13 @@ const Header = () => {
             </span>
           </h1>
         </Link>
-
         <div className="hidden xl:flex items-center gap-8">
           <Nav />
-          <Button>Hire Me</Button>
-          <ToggleTheme />
+          <div className="flex items-center gap-2">
+            <Button>Hire Me</Button>
+            <ToggleTheme />
+          </div>
+
         </div>
 
 
