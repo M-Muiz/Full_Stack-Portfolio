@@ -1,10 +1,10 @@
 "use client"
 
-import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet"
+import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet"
 import { usePathname } from "next/navigation"
 import Link from "next/link";
 import { CiMenuFries } from "react-icons/ci"
-import { ToggleTheme } from "./ToggleTheme"
+import { ToggleTheme } from "../ToggleTheme";
 
 const links = [
   {

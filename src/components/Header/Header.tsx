@@ -1,9 +1,9 @@
 import React from 'react'
 import Link from 'next/link'
-import { Button } from './ui/button'
+import { Button } from '../ui/button'
 import Nav from './Nav'
 import MobileNav from './MobileNav'
-import { ToggleTheme } from './ToggleTheme'
+import { ToggleTheme } from '../ToggleTheme'
 
 const Header = () => {
   return (
