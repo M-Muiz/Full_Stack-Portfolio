@@ -34,7 +34,7 @@
 
     --radius: 0.5rem;
   }
-  
+
   .dark {
     --background: 0 0% 0%;
     --foreground: 0 0% 98%;
@@ -84,5 +84,9 @@
 
   .h3 {
     @apply text-[20px] xl:text-[24px] leading-[1.1] font-semibold;
+  }
+
+  .secondaryText {
+    @apply text-black/80 dark:text-white/80;
   }
 }
