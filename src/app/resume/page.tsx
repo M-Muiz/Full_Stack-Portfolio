@@ -5,32 +5,36 @@ import { FaHtml5 } from "react-icons/fa";
 
 const about = {
   title: "About Me",
-  Description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam deserunt ipsa exercitationem odit illum voluptatibus saepe quisquam omnis expedita aliquam.",
+  description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam deserunt ipsa exercitationem odit illum voluptatibus saepe quisquam omnis expedita aliquam.",
   info: [
     {
-      fieldName: "Nmae",
-      fieldValue: "John Doe",
+      fieldName: "Name",
+      fieldValue: "Muhammad Muiz",
     },
     {
-      fieldName: "Nmae",
-      fieldValue: "John Doe",
+      fieldName: "Phone",
+      fieldValue: "(+92) 112 884 425",
     },
     {
-      fieldName: "Nmae",
-      fieldValue: "John Doe",
+      fieldName: "Natinality",
+      fieldValue: "Pakistan",
     },
     {
-      fieldName: "Nmae",
-      fieldValue: "John Doe",
+      fieldName: "Freelance",
+      fieldValue: "Avaliable",
     },
     {
-      fieldName: "Nmae",
-      fieldValue: "John Doe",
+      fieldName: "Experience",
+      fieldValue: "1+ year",
     },
     {
-      fieldName: "Nmae",
-      fieldValue: "John Doe",
+      fieldName: "Email",
+      fieldValue: "mmuizsiddiqui@gmail.com",
     },
+    {
+      fieldName: "Languages",
+      fieldValue: "Urdu, English",
+    }
   ]
 };
 
@@ -237,11 +241,11 @@ const page = () => {
                         <Tooltip>
                           <TooltipTrigger className="w-full h-[150px] secondaryBackground rounded-xl flex items-center justify-center group">
                             <div className="text-6xl group-hover:text-primary transition-all duration-300">
-                            {skill.icon}
+                              {skill.icon}
                             </div>
                           </TooltipTrigger>
                           <TooltipContent>
-                            <p>{skill.name}</p>
+                            <p className="capitalize">{skill.name}</p>
                           </TooltipContent>
                         </Tooltip>
                       </TooltipProvider>
@@ -252,8 +256,24 @@ const page = () => {
               </div>
             </TabsContent>
 
-            <TabsContent value="about" className="w-full">
-              about
+            <TabsContent value="about" className="w-full text-center xl:text-left">
+              <div className="flex flex-col gap-[30px]">
+                <h3 className="text-4xl font-bold">{about.title}</h3>
+                <p className="secondaryText max-w-[600px] mx-auto xl:mx-0">{about.description}</p>
+
+                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
+                  {about.info.map((item: any, index: number) => {
+                    return (
+                      <li key={index} className="flex justify-between items-center xl:justify-start gap-4">
+                        <span className="secondaryText">{item.fieldName}</span>
+                        <span className="text-base">{item.fieldValue}</span>
+                      </li>
+                    )
+                  })}
+                </ul>
+
+
+              </div>
             </TabsContent>
           </div>
 
