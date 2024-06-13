@@ -1,7 +1,8 @@
 "use client";
 
 import { Description } from "@radix-ui/react-dialog";
-import { FaHtml5 } from "react-icons/fa";
+import { FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaNodeJs  } from "react-icons/fa";
+import {SiTailwindcss, SiNextdotjs} from "react-icons/si"
 
 const about = {
   title: "About Me",
@@ -114,38 +115,38 @@ const skills = {
 
     },
     {
-      icon: <FaHtml5 />,
-      name: "HTML",
+      icon: <FaCss3  />,
+      name: "CSS",
 
     },
     {
-      icon: <FaHtml5 />,
-      name: "HTML",
+      icon: <FaJs />,
+      name: "JavaScript",
 
     },
     {
-      icon: <FaHtml5 />,
-      name: "HTML",
+      icon: <FaReact />,
+      name: "React Js",
 
     },
     {
-      icon: <FaHtml5 />,
-      name: "HTML",
+      icon: <FaFigma />,
+      name: "Figma",
 
     },
     {
-      icon: <FaHtml5 />,
-      name: "HTML",
+      icon: <FaNodeJs />,
+      name: "Node Js",
 
     },
     {
-      icon: <FaHtml5 />,
-      name: "HTML",
+      icon: <SiTailwindcss />,
+      name: "Tailwind Css",
 
     },
     {
-      icon: <FaHtml5 />,
-      name: "HTML",
+      icon: <SiNextdotjs />,
+      name: "Next Js",
 
     },
   ]

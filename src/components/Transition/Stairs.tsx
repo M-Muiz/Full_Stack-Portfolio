@@ -27,7 +27,7 @@ const Stairs = () => {
                     <motion.div
                         key={index}
                         variants={starisAnimation}
-                        className="h-full w-full bg-white relative"
+                        className="h-full w-full secondaryBackground relative"
                         initial="initial"
                         animate="animate"
                         exit="exit"
