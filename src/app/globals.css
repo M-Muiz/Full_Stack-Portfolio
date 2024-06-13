@@ -89,4 +89,8 @@
   .secondaryText {
     @apply text-black/80 dark:text-white/80;
   }
+
+  .secondaryBackground {
+    @apply bg-slate-300/60 dark:bg-[#27272c];
+  }
 }

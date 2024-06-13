@@ -208,7 +208,7 @@ const page = () => {
                 <ScrollArea className="h-[400px]">
                   <ul className="grid grid-cols-1 xl:grid-cols-2 gap-[30px]">
                     {education.items.map((item: any, index: number) => {
-                      return <li key={index} className="bg-slate-300/60 dark:bg-[#27272c] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
+                      return <li key={index} className="secondaryBackground h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
                         <span className="text-primary dark:text-sky-400">{item.duration}</span>
                         <h3 className="text-base max-w-[260px] min-h-[60px] text-center lg:text-left">{item.degree}</h3>
                         <div className="flex items-center gap-3">
@@ -230,13 +230,13 @@ const page = () => {
                   <p className="secondaryText max-w-[600px] mx-auto xl:mx-0">{skills.description}</p>
                 </div>
 
-                <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:gap-[30px]">
+                <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:gap-[30px] gap-4">
                   {skills.skillList.map((skill: any, index: number) => {
                     return <li key={index}>
-                      <TooltipProvider>
+                      <TooltipProvider delayDuration={100}>
                         <Tooltip>
-                          <TooltipTrigger>
-                            <div className="text-6xl">
+                          <TooltipTrigger className="w-full h-[150px] secondaryBackground rounded-xl flex items-center justify-center group">
+                            <div className="text-6xl group-hover:text-primary transition-all duration-300">
                             {skill.icon}
                             </div>
                           </TooltipTrigger>
