@@ -1,8 +1,8 @@
 "use client";
 
 import { Description } from "@radix-ui/react-dialog";
-import { FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaNodeJs  } from "react-icons/fa";
-import {SiTailwindcss, SiNextdotjs} from "react-icons/si"
+import { FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaNodeJs } from "react-icons/fa";
+import { SiTailwindcss, SiNextdotjs } from "react-icons/si"
 
 const about = {
   title: "About Me",
@@ -106,7 +106,7 @@ const education = {
 
 const skills = {
   icon: "/cap.svg",
-  title: "My Education",
+  title: "My Skills",
   description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam deserunt ipsa exercitationem odit illum voluptatibus saepe quisquam omnis expedita aliquam.",
   skillList: [
     {
@@ -115,7 +115,7 @@ const skills = {
 
     },
     {
-      icon: <FaCss3  />,
+      icon: <FaCss3 />,
       name: "CSS",
 
     },
