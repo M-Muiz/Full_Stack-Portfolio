@@ -267,7 +267,7 @@ const page = () => {
                     return (
                       <li key={index} className="flex justify-between items-center xl:justify-start gap-4">
                         <span className="secondaryText">{item.fieldName}</span>
-                        <span className="text-base">{item.fieldValue}</span>
+                        <span className="text-base font-semibold">{item.fieldValue}</span>
                       </li>
                     )
                   })}
