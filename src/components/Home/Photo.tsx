@@ -8,7 +8,7 @@ const Photo = () => {
 
     const { theme } = useTheme();
 
-    const color = theme === "dark" ? "#7b0f73" : "#9a08dd";
+    const color = theme === "dark" ? "#b63207" : "#9a08dd";
 
     return (
         <div className="w-full h-full relative">

@@ -94,7 +94,7 @@
   }
   
   .text-outline{
-  -webkit-text-stroke: 1px white;
+  -webkit-text-stroke: 1px #38bdf8;
 }
 
 .text-outline-hover{

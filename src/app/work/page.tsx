@@ -10,16 +10,17 @@ import { BsArrowUpRight, BsGithub } from "react-icons/bs"
 import { Tooltip, TooltipProvider, TooltipContent, TooltipTrigger } from "@radix-ui/react-tooltip";
 import Link from "next/link";
 import Image from "next/image";
+import SliderButtons from "@/components/work/SliderButtons";
 
 
 const projects = [
   {
     num: "01",
-    category: "frontend",
-    title: "Portfolio",
-    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam deserunt ipsa exercitationem odit illum voluptatibus saepe quisquam omnis expedita aliquam.",
+    category: "FullStack Project",
+    title: "Foodie",
+    description: "A powerful ",
     stack: [
-      { name: "Html5" }, { name: "Css3" }, { name: "JavaScript" }],
+      { name: "React Js" }, { name: "Css3" }, { name: "Node Js" }, { name: "MongoDb" }, { name: "Cloudinary" }],
     image: "/photo.png",
     live: "",
     github: ""
@@ -48,10 +49,9 @@ const projects = [
   },
 ];
 
+const [project, setProject] = useState(projects[0])
 
 const page = () => {
-
-  const [project, setProject] = useState(projects[0])
   const handleChnage = (swiper: any) => {
     const currentIndex = swiper.activeIndex;
     setProject(projects[currentIndex])
@@ -86,7 +86,7 @@ const page = () => {
                 <Link href={project.live}>
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full secondaryBackground flex items-center justify-center group">
+                      <TooltipTrigger className="w-[60px] h-[60px] rounded-full secondaryBackground flex items-center justify-center group border border-primary">
                         <BsArrowUpRight className="text-2xl text-black dark:text-white group-hover:text-primary" />
                       </TooltipTrigger>
                       <TooltipContent>
@@ -99,7 +99,7 @@ const page = () => {
                 <Link href={project.github}>
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full secondaryBackground flex items-center justify-center group">
+                      <TooltipTrigger className="w-[60px] h-[60px] rounded-full secondaryBackground flex items-center justify-center group border border-primary">
                         <BsGithub className="text-2xl text-black dark:text-white group-hover:text-primary" />
                       </TooltipTrigger>
                       <TooltipContent>
@@ -122,13 +122,15 @@ const page = () => {
                       <div></div>
 
 
-                      <div className="relative w-full h-full">
+                      <div className="relative w-full h-full border border-primary rounded-md">
                         <Image src={item.image} alt={item.title} fill className="object-cover" />
                       </div>
                     </div>
                   </SwiperSlide>
                 )
               })}
+
+              <SliderButtons containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none" iconStyles="" btnStyles="secondaryBackground text- hover:text-white dark:text-white hover:bg-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all border border-primary rounded-md" />
             </Swiper>
           </div>
         </div>
