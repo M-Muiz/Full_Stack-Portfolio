@@ -38,5 +38,3 @@ const page = () => {
 
 export default page
 
-
-// home chante
