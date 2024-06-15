@@ -49,15 +49,14 @@ const projects = [
   },
 ];
 
-const [project, setProject] = useState(projects[0])
-
-const handleChnage = (swiper: any) => {
-  const currentIndex = swiper.activeIndex;
-  setProject(projects[currentIndex])
-};
-
-
 const page = () => {
+
+  const [project, setProject] = useState(projects[0])
+
+  const handleChnage = (swiper: any) => {
+    const currentIndex = swiper.activeIndex;
+    setProject(projects[currentIndex])
+  };
 
   return (
     <motion.section initial={{ opacity: 0 }} animate={{ opacity: 1 }}
