@@ -21,7 +21,7 @@ const projects = [
     description: "A powerful ",
     stack: [
       { name: "React Js" }, { name: "Css3" }, { name: "Node Js" }, { name: "MongoDb" }, { name: "Cloudinary" }],
-    image: "/photo.png",
+    image: "/foodie.jpeg",
     live: "",
     github: ""
   },
@@ -32,7 +32,7 @@ const projects = [
     description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam deserunt ipsa exercitationem odit illum voluptatibus saepe quisquam omnis expedita aliquam.",
     stack: [
       { name: "Html5" }, { name: "Html5" }, { name: "Html5" }],
-    image: "/photo.png",
+    image: "/estate.png",
     live: "",
     github: ""
   },
@@ -43,7 +43,18 @@ const projects = [
     description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam deserunt ipsa exercitationem odit illum voluptatibus saepe quisquam omnis expedita aliquam.",
     stack: [
       { name: "Html5" }, { name: "Html5" }, { name: "Html5" }],
-    image: "/photo.png",
+    image: "/grilli.png",
+    live: "",
+    github: ""
+  },
+  {
+    num: "04",
+    category: "frontend",
+    title: "Portfolio",
+    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam deserunt ipsa exercitationem odit illum voluptatibus saepe quisquam omnis expedita aliquam.",
+    stack: [
+      { name: "Html5" }, { name: "Html5" }, { name: "Html5" }],
+    image: "/nft.png",
     live: "",
     github: ""
   },
@@ -80,7 +91,7 @@ const page = () => {
                   )
                 })}
               </ul>
-              <div className="border border-white/20"></div>
+              <div className="border border-sky-400/70"></div>
 
               <div className="flex items-center gap-4">
 
@@ -123,8 +134,8 @@ const page = () => {
                       <div></div>
 
 
-                      <div className="relative w-full h-full border border-primary rounded-md">
-                        <Image src={item.image} alt={item.title} fill className="object-cover" />
+                      <div className="relative w-full h-full rounded-lg">
+                        <Image src={item.image} alt={item.title} fill className="object-cover rounded-lg" />
                       </div>
                     </div>
                   </SwiperSlide>
