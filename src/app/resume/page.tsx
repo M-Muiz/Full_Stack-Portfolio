@@ -13,7 +13,7 @@ import { DiMysql, DiNodejs } from "react-icons/di";
 
 const about = {
   title: "About Me",
-  description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam deserunt ipsa exercitationem odit illum voluptatibus saepe quisquam omnis expedita aliquam.",
+  description: "As a FullStack Developer.I'm dedicated to creating seamless digital experiences.I focus on user-centric design pinciples to craft elegant interfaces that blend aesthatics with functionality.",
   info: [
     {
       fieldName: "Name",
@@ -114,7 +114,7 @@ const education = {
 const skills = {
   icon: "/cap.svg",
   title: "My Skills",
-  description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam deserunt ipsa exercitationem odit illum voluptatibus saepe quisquam omnis expedita aliquam.",
+  description: "I am a quick learner and I am always looking forward to expanding my knowledge and skill set.",
   skillList: [
     {
       icon: <FaHtml5 />,
@@ -271,26 +271,26 @@ const page = () => {
                   <h3 className="text-4xl font-bold">{skills.title}</h3>
                   <p className="secondaryText max-w-[600px] mx-auto xl:mx-0">{skills.description}</p>
                 </div>
-
-                <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:gap-[30px] gap-4">
-                  {skills.skillList.map((skill: any, index: number) => {
-                    return <li key={index}>
-                      <TooltipProvider delayDuration={100}>
-                        <Tooltip>
-                          <TooltipTrigger className="w-full h-[150px] secondaryBackground rounded-xl flex items-center justify-center group">
-                            <div className="text-6xl group-hover:text-primary transition-all duration-300">
-                              {skill.icon}
-                            </div>
-                          </TooltipTrigger>
-                          <TooltipContent>
-                            <p className="capitalize">{skill.name}</p>
-                          </TooltipContent>
-                        </Tooltip>
-                      </TooltipProvider>
-                    </li>
-                  })}
-                </ul>
-
+                <ScrollArea className="h-[520px]">
+                  <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:gap-[30px] gap-4">
+                    {skills.skillList.map((skill: any, index: number) => {
+                      return <li key={index}>
+                        <TooltipProvider delayDuration={100}>
+                          <Tooltip>
+                            <TooltipTrigger className="w-full h-[150px] secondaryBackground rounded-xl flex items-center justify-center group">
+                              <div className="text-6xl group-hover:text-primary transition-all duration-300">
+                                {skill.icon}
+                              </div>
+                            </TooltipTrigger>
+                            <TooltipContent>
+                              <p className="capitalize">{skill.name}</p>
+                            </TooltipContent>
+                          </Tooltip>
+                        </TooltipProvider>
+                      </li>
+                    })}
+                  </ul>
+                </ScrollArea>
               </div>
             </TabsContent>
 
