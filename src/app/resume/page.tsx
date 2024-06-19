@@ -3,6 +3,13 @@
 import { Description } from "@radix-ui/react-dialog";
 import { FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaNodeJs } from "react-icons/fa";
 import { SiTailwindcss, SiNextdotjs } from "react-icons/si"
+import { SiTypescript } from "react-icons/si";
+import { IoLogoAngular } from "react-icons/io5";
+import { FaBootstrap } from "react-icons/fa";
+import { FaGitAlt } from "react-icons/fa";
+import { SiMongodb } from "react-icons/si";
+import { DiMysql, DiNodejs } from "react-icons/di";
+
 
 const about = {
   title: "About Me",
@@ -135,7 +142,7 @@ const skills = {
 
     },
     {
-      icon: <FaNodeJs />,
+      icon: <DiNodejs />,
       name: "Node Js",
 
     },
@@ -147,6 +154,36 @@ const skills = {
     {
       icon: <SiNextdotjs />,
       name: "Next Js",
+
+    },
+    {
+      icon: <SiTypescript />,
+      name: "TypeScript",
+
+    },
+    {
+      icon: <IoLogoAngular />,
+      name: "Angular",
+
+    },
+    {
+      icon: <FaBootstrap />,
+      name: "Bootstrap",
+
+    },
+    {
+      icon: <FaGitAlt />,
+      name: "Git",
+
+    },
+    {
+      icon: <SiMongodb />,
+      name: "MongoDB",
+
+    },
+    {
+      icon: <DiMysql />,
+      name: "MySQL",
 
     },
   ]
