@@ -13,7 +13,8 @@ import { DiMysql, DiNodejs } from "react-icons/di";
 
 const about = {
   title: "About Me",
-  description: "As a FullStack Developer.I'm dedicated to creating seamless digital experiences.I focus on user-centric design pinciples to craft elegant interfaces that blend aesthatics with functionality.",
+  // description: "As a FullStack Developer.I'm dedicated to creating seamless digital experiences.I focus on user-centric design pinciples to craft elegant interfaces that blend aesthatics with functionality.",
+  description: "I am excited to contribute to a professional team and work on meaningful projects as a Frontend Web Developer.",
   info: [
     {
       fieldName: "Name",
@@ -271,7 +272,7 @@ const page = () => {
                   <h3 className="text-4xl font-bold">{skills.title}</h3>
                   <p className="secondaryText max-w-[600px] mx-auto xl:mx-0">{skills.description}</p>
                 </div>
-                <ScrollArea className="h-[520px]">
+                <ScrollArea className="h-[340px]">
                   <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:gap-[30px] gap-4">
                     {skills.skillList.map((skill: any, index: number) => {
                       return <li key={index}>
