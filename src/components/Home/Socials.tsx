@@ -7,11 +7,10 @@ import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa"
 const socials = [
     { icon: <FaGithub />, path: "https://github.com/M-Muiz" },
     { icon: <FaLinkedin />, path: "https://www.linkedin.com/in/muizdev" },
-    { icon: <FaLinkedin />, path: "https://www.linkedin.com/in/muizdev" },
-    { icon: <FaInstagram />, path: "https://www.instagram.com/muizdev" }
+    { icon: <FaInstagram />, path: "#" }
 ];
 
-const Socials = ({ containerStyles, iconStyles } : any) => {
+const Socials = ({ containerStyles, iconStyles }: any) => {
     return (
         <div className={containerStyles}>
             {socials.map((item, index) => {

@@ -3,12 +3,18 @@
 import { motion } from "framer-motion"
 import { useTheme } from "next-themes";
 import Image from "next/image";
+import { useEffect, useState } from "react";
+
+
 
 const Photo = () => {
 
     const { theme } = useTheme();
+    const [color, setColor] = useState("");
 
-    const color = theme === "dark" ? "#b63207" : "#9a08dd";
+    useEffect(() => {
+        theme === "dark" ? setColor("#b63207") : setColor("#9a08dd");
+    }, [theme])
 
     return (
         <div className="w-full h-full relative">
