@@ -17,7 +17,7 @@ const page = () => {
 
             <div className="flex flex-col xl:flex-row items-center gap-8">
               <Button size="lg" className="flex items-center gap-2 uppercase">
-                <span> Download dCV</span>
+                <span> Download CV</span>
                 <FiDownload className="text-xl" />
               </Button>
               <div className="mb-8 xl:mb-0">
@@ -38,3 +38,4 @@ const page = () => {
 
 export default page
 
+// Home page

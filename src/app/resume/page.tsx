@@ -14,7 +14,7 @@ import { DiMysql, DiNodejs } from "react-icons/di";
 const about = {
   title: "About Me",
   // description: "As a FullStack Developer.I'm dedicated to creating seamless digital experiences.I focus on user-centric design pinciples to craft elegant interfaces that blend aesthatics with functionality.",
-  description: "I am excited to contribute to a professional team and work on meaningful projects as a Frontend Web Developer.",
+  description: "I am excited to contribute to a professional team and work on meaningful projects as a FullStack Web Developer.",
   info: [
     {
       fieldName: "Name",
@@ -50,7 +50,7 @@ const about = {
 const experience: any = {
   icon: "/cap.svg",
   title: "My Experience",
-  description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam deserunt ipsa exercitationem odit illum voluptatibus saepe quisquam omnis expedita aliquam.",
+  description: "Lorem ipsum dolor sit amet aliquam.",
   items: [
     {
       company: "CodeSoft",
@@ -82,7 +82,7 @@ const experience: any = {
 const education = {
   icon: "/cap.svg",
   title: "My Education",
-  description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam deserunt ipsa exercitationem odit illum voluptatibus saepe quisquam omnis expedita aliquam.",
+  description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. ",
   items: [
     {
       institue: "Saylani Mass It Training Center",
