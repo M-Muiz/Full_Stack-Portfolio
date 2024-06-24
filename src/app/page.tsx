@@ -17,8 +17,8 @@ const page = () => {
 
             <div className="flex flex-col xl:flex-row items-center gap-8">
               <Button size="lg" className="flex items-center gap-2 uppercase">
-                <span> Download CV</span>
-                <FiDownload className="text-xl" />
+                  <span> Download CV</span>
+                  <FiDownload className="text-xl" />
               </Button>
               <div className="mb-8 xl:mb-0">
                 <Socials containerStyles='flex gap-6' iconStyles="h-9 w-9 flex items-center justify-center border-2 border-primary rounded-full text-base hover:bg-primary hover:text-white hover:transition-all duration-500" />

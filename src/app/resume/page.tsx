@@ -14,7 +14,7 @@ import { DiMysql, DiNodejs } from "react-icons/di";
 const about = {
   title: "About Me",
   // description: "As a FullStack Developer.I'm dedicated to creating seamless digital experiences.I focus on user-centric design pinciples to craft elegant interfaces that blend aesthatics with functionality.",
-  description: "I am excited to contribute to a professional team and work on meaningful projects as a FullStack Web Developer.",
+  description: "As a FullStack Developer.I'm dedicated to creating seamless digital experiences.",
   info: [
     {
       fieldName: "Name",
@@ -50,7 +50,6 @@ const about = {
 const experience: any = {
   icon: "/cap.svg",
   title: "My Experience",
-  description: "Lorem ipsum dolor sit amet aliquam.",
   items: [
     {
       company: "CodeSoft",
@@ -82,7 +81,6 @@ const experience: any = {
 const education = {
   icon: "/cap.svg",
   title: "My Education",
-  description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. ",
   items: [
     {
       institue: "Saylani Mass It Training Center",
@@ -223,7 +221,6 @@ const page = () => {
             <TabsContent value="experience" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <h3 className="text-4xl font-bold">{experience.title}</h3>
-                <p className="secondaryText max-w-[600px] mx-auto xl:mx-0">{experience.description}</p>
 
                 <ScrollArea className="h-[400px]">
                   <ul className="grid grid-cols-1 xl:grid-cols-2 gap-[30px]">
@@ -246,7 +243,6 @@ const page = () => {
             <TabsContent value="education" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <h3 className="text-4xl font-bold">{education.title}</h3>
-                <p className="secondaryText max-w-[600px] mx-auto xl:mx-0">{education.description}</p>
 
                 <ScrollArea className="h-[400px]">
                   <ul className="grid grid-cols-1 xl:grid-cols-2 gap-[30px]">

@@ -65,10 +65,10 @@ const page = () => {
               <h3 className="text-2xl xl:text-4xl text-primary">Let's Work Together</h3>
               <p className="secondaryText text-sm">I am excited to contribute to a professional team and work on meaningful projects as a FullStack Web Developer.</p>
               <div className="grid grid-cols-1 gap-6">
-                <Input name="from_name" type="text" placeholder="Your Name" className="max-w-[350px]" />
-                <Input name="from_email" type="email" placeholder="Email Address" className="max-w-[350px]" />
+                <Input required name="from_name" type="text" placeholder="Your Name" className="max-w-[350px]" />
+                <Input required name="from_email" type="email" placeholder="Email Address" className="max-w-[350px]" />
               </div>
-              <Textarea name="message" className="h-[200px]" placeholder="Type your message here" />
+              <Textarea required name="message" className="h-[200px]" placeholder="Type your message here" />
               <Button
                 value="Send" type="submit" size="md" className="max-w-40 disabled:opacity-60" disabled={loading}>
                 {loading ? "Sending..." : "Send"}
