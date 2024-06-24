@@ -6,7 +6,8 @@ import { Textarea } from "@/components/ui/textarea";
 
 import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { MdOutlineConstruction } from "react-icons/md";
-import { FaAddressBook, FaEnvelope, FaPhoneAlt } from "react-icons/fa";
+import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
+import { FaEarthAsia } from "react-icons/fa6";
 import { motion } from "framer-motion";
 
 
@@ -14,7 +15,7 @@ const info = [
   {
     icon: <FaPhoneAlt />,
     title: "phone",
-    description: "0311-299448820"
+    description: "0311-2884425"
   },
   {
     icon: <FaEnvelope />,
@@ -22,8 +23,8 @@ const info = [
     description: "mmuizsiddiqui@gmal.com"
   },
   {
-    icon: <FaAddressBook />,
-    title: "Address",
+    icon: <FaEarthAsia />,
+    title: "Country",
     description: "Pakistan"
   },
 ];
@@ -37,7 +38,7 @@ const page = () => {
           <div className="xl:w-[54%] order-2 xl:order-none">
             <form className="flex flex-col gap-6 p-10 secondaryBackground rounded-xl">
               <h3 className="text-2xl xl:text-4xl text-primary">Let's Work Together</h3>
-              <p className="secondaryText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, praesentium?</p>
+              <p className="secondaryText text-sm">I am excited to contribute to a professional team and work on meaningful projects as a FullStack Web Developer.</p>
               <div className="grid grid-cols-1 gap-6">
                 <Input type="text" placeholder="Your Name" className="max-w-[350px]" />
                 <Input type="email" placeholder="Email Address" className="max-w-[350px]" />
