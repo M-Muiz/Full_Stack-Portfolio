@@ -18,10 +18,10 @@ const projects = [
     num: "01",
     category: "FullStack Project",
     title: "Foodie",
-    description: "A powerful ",
+    description: "A powerful Food Delivery App.",
     stack: [
       { name: "React Js" }, { name: "Css3" }, { name: "Node Js" }, { name: "MongoDb" }, { name: "Cloudinary" }],
-    image: "/foodie.jpeg",
+    image: "/foodie.png",
     live: "",
     github: ""
   },
