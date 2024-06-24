@@ -9,11 +9,11 @@ import { FaBootstrap } from "react-icons/fa";
 import { FaGitAlt } from "react-icons/fa";
 import { SiMongodb } from "react-icons/si";
 import { DiMysql, DiNodejs } from "react-icons/di";
+import { IoConstructSharp } from "react-icons/io5";
 
 
 const about = {
   title: "About Me",
-  // description: "As a FullStack Developer.I'm dedicated to creating seamless digital experiences.I focus on user-centric design pinciples to craft elegant interfaces that blend aesthatics with functionality.",
   description: "As a FullStack Developer.I'm dedicated to creating seamless digital experiences.",
   info: [
     {
@@ -22,7 +22,7 @@ const about = {
     },
     {
       fieldName: "Phone",
-      fieldValue: "(+92) 112 884 425",
+      fieldValue: "(+92) 312 288 4425",
     },
     {
       fieldName: "Natinality",
@@ -48,38 +48,26 @@ const about = {
 };
 
 const experience: any = {
-  icon: "/cap.svg",
   title: "My Experience",
   items: [
     {
       company: "CodeSoft",
       position: "Frontend Developer",
-      duration: "~2022 - Present",
+      duration: "October2023 – November2023 (1month)",
     },
     {
       company: "SMIT",
       position: "FullStack Developer",
-      duration: "~2022 - Present",
+      duration: "September2023 – December2023 (4months)",
     },
     {
-      company: "SMIT",
+      company: "YamBaba",
       position: "FullStack Developer",
-      duration: "~2022 - Present",
-    },
-    {
-      company: "SMIT",
-      position: "FullStack Developer",
-      duration: "~2022 - Present",
-    },
-    {
-      company: "SMIT",
-      position: "FullStack Developer",
-      duration: "~2022 - Present",
+      duration: "January2024 – February2024 (1months)",
     },
   ]
 };
 const education = {
-  icon: "/cap.svg",
   title: "My Education",
   items: [
     {
@@ -88,30 +76,24 @@ const education = {
       duration: "~2022 - Present",
     },
     {
-      institue: "Saylani Mass It Training Center",
-      degree: "FullStack Web & Mobile Develment Course",
-      duration: "~2022 - Present",
+      institue: "Government Superior Science Collage",
+      degree: "FSC in Pre-Engineering",
+      duration: "~2023 – Present",
     },
     {
       institue: "Saylani Mass It Training Center",
-      degree: "FullStack Web & Mobile Develment Course",
-      duration: "~2022 - Present",
+      degree: "JavaScript Course",
+      duration: "~2022 - 1 month",
     },
     {
-      institue: "Saylani Mass It Training Center",
-      degree: "FullStack Web & Mobile Develment Course",
-      duration: "~2022 - Present",
-    },
-    {
-      institue: "Saylani Mass It Training Center",
-      degree: "FullStack Web & Mobile Develment Course",
-      duration: "~2022 - Present",
+      institue: "Green Public High School",
+      degree: "Matriculation in Science",
+      duration: "~Complete in 2022 with A-One",
     },
   ]
 };
 
 const skills = {
-  icon: "/cap.svg",
   title: "My Skills",
   description: "I am a quick learner and I am always looking forward to expanding my knowledge and skill set.",
   skillList: [
@@ -227,7 +209,7 @@ const page = () => {
                     {experience.items.map((item: any, index: number) => {
                       return <li key={index} className="bg-slate-300/60 dark:bg-[#27272c] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
                         <span className="text-primary dark:text-sky-400">{item.duration}</span>
-                        <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.position}</h3>
+                        <h3 className="text-xl max-w-[260px] min-h-fit text-center lg:text-left">{item.position}</h3>
                         <div className="flex items-center gap-3">
                           <span className="w-[6px] h-[6px] bg-primary rounded-full"></span>
                           <p className="secondaryText">{item.company}</p>
@@ -241,7 +223,7 @@ const page = () => {
             </TabsContent>
 
             <TabsContent value="education" className="w-full">
-              <div className="flex flex-col gap-[30px] text-center xl:text-left">
+              {/* <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <h3 className="text-4xl font-bold">{education.title}</h3>
 
                 <ScrollArea className="h-[400px]">
@@ -249,7 +231,7 @@ const page = () => {
                     {education.items.map((item: any, index: number) => {
                       return <li key={index} className="secondaryBackground h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
                         <span className="text-primary dark:text-sky-400">{item.duration}</span>
-                        <h3 className="text-base max-w-[260px] min-h-[60px] text-center lg:text-left">{item.degree}</h3>
+                        <h3 className="text-base max-w-[260px] min-h-fit text-center lg:text-left">{item.degree}</h3>
                         <div className="flex items-center gap-3">
                           <span className="w-[6px] h-[6px] bg-primary rounded-full"></span>
                           <p className="secondaryText text-sm">{item.institue}</p>
@@ -259,7 +241,12 @@ const page = () => {
                   </ul>
                 </ScrollArea>
 
+              </div> */}
+
+              <div className="flex items-center justify-center text-4xl xl:text-8xl gap-2">
+                <IoConstructSharp />Working
               </div>
+
             </TabsContent>
 
             <TabsContent value="skills" className="w-full h-full">
