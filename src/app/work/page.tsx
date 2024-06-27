@@ -1,6 +1,5 @@
 "use client";
 
-
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react"
@@ -27,36 +26,47 @@ const projects = [
   },
   {
     num: "02",
-    category: "frontend",
+    category: "MernStack Project",
     title: "Portfolio",
-    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam deserunt ipsa exercitationem odit illum voluptatibus saepe quisquam omnis expedita aliquam.",
+    description: "A complete MernStack Estate Project where you can upload your residency add,see other residency,you can filter residencies according to your need, you can login/register also customize your profile.",
     stack: [
-      { name: "Html5" }, { name: "Html5" }, { name: "Html5" }],
+      { name: "React Js" }, { name: "Tailwind Css" }, { name: "Node Js" }, { name: "Express Js" }, { name: "Mongo DB" }, { name: "Firebase" }],
     image: "/estate.png",
-    live: "",
-    github: ""
+    live: "https://mern-stack-estate-app-ieba.vercel.app/",
+    github: "https://github.com/M-Muiz/MERN_STACK_ESTATE_APP"
   },
   {
     num: "03",
-    category: "frontend",
-    title: "Portfolio",
-    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam deserunt ipsa exercitationem odit illum voluptatibus saepe quisquam omnis expedita aliquam.",
+    category: "Frontend Project",
+    title: "Grilli Master",
+    description: "Grilli Master,A complete frontend page with high quality animations and responsivness.",
     stack: [
-      { name: "Html5" }, { name: "Html5" }, { name: "Html5" }],
+      { name: "Html5" }, { name: "Css3" }, { name: "Javascript" }],
     image: "/grilli.png",
-    live: "",
-    github: ""
+    live: "https://m-muiz.github.io/Grilli-Master/",
+    github: "https://github.com/M-Muiz/Grilli-Master"
   },
   {
     num: "04",
-    category: "frontend",
-    title: "Portfolio",
-    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam deserunt ipsa exercitationem odit illum voluptatibus saepe quisquam omnis expedita aliquam.",
+    category: "Frontend Project",
+    title: "Nft",
+    description: "NFT,A complete frontend page with high quality animations and responsivness.",
     stack: [
-      { name: "Html5" }, { name: "Html5" }, { name: "Html5" }],
+      { name: "Html5" }, { name: "Css3" }, { name: "Javascript" }, { name: "Bounce Js" }],
     image: "/nft.png",
-    live: "",
-    github: ""
+    live: "https://m-muiz.github.io/NFT-MArketPlace-LandingPage/",
+    github: "https://github.com/M-Muiz/NFT-MArketPlace-LandingPage"
+  },
+  {
+    num: "05",
+    category: "Frontend Project",
+    title: "Travel Agency",
+    description: "Travel Agency,Complete responsive with multiple frontend page.",
+    stack: [
+      { name: "Html5" }, { name: "Css3" }, { name: "Javascript" }, { name: "Bootstrap" }],
+    image: "/agency.png",
+    live: "https://m-muiz.github.io/Agency-website/index.html",
+    github: "https://github.com/M-Muiz/Agency-website"
   },
 ];
 
@@ -84,10 +94,10 @@ const page = () => {
               <h2 className="text-[42px] font-bold leading-none group-hover:text-primary transition-all duration-500 capitalize">{project.category}</h2>
 
               <p className="secondaryText">{project.description}</p>
-              <ul className="flex gap-4">
+              <ul className="flex gap-4 flex-wrap">
                 {project.stack.map((item: any, index: number) => {
                   return (
-                    <li className="text-xl text-primary" key={index}>{item.name}{index !== project.stack.length - 1 && ","}</li>
+                    <li className="text-base min-w-fit text-primary" key={index}>{item.name}{index !== project.stack.length - 1 && ","}</li>
                   )
                 })}
               </ul>
@@ -95,7 +105,7 @@ const page = () => {
 
               <div className="flex items-center gap-4">
 
-                <Link href={project.live}>
+                <Link target="_blank" href={project.live}>
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[60px] h-[60px] rounded-full secondaryBackground flex items-center justify-center group border border-primary">
@@ -108,7 +118,7 @@ const page = () => {
                   </TooltipProvider>
                 </Link>
 
-                <Link href={project.github}>
+                <Link target="_blank" href={project.github}>
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[60px] h-[60px] rounded-full secondaryBackground flex items-center justify-center group border border-primary">
