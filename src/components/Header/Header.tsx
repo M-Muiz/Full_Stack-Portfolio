@@ -24,7 +24,7 @@ const Header = () => {
         </Link>
         <div className="hidden xl:flex items-center gap-8">
           <Nav />
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1">
             <Button onClick={() => router.push('/contact')}>
               Hire Me
             </Button>

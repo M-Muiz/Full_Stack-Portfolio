@@ -9,6 +9,8 @@ import { FaEarthAsia } from "react-icons/fa6";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { useRef, useState } from "react";
+import { MdVerified } from "react-icons/md";
+import { GiSkullCrossedBones } from "react-icons/gi";
 
 const info = [
   {
@@ -32,6 +34,7 @@ const page = () => {
 
   const form = useRef();
   const [loading, setLoading] = useState(false);
+  const [message, setMessage] = useState("");
 
 
   const sendEmail = async (e: any) => {
@@ -46,12 +49,13 @@ const page = () => {
         "7rZJQACfHvmnUQEgJ"
 
       )
+      console.log(res)
       setLoading(false);
-      console.log('Message Send Successfully!', res);
+      setMessage("Your Message has been sent successfully.")
 
     } catch (error) {
       setLoading(false);
-      console.log('Message Send Failed. Try Again!');
+      setMessage("Failed to send Message.")
     }
   };
 
@@ -73,6 +77,10 @@ const page = () => {
                 value="Send" type="submit" size="md" className="max-w-40 disabled:opacity-60" disabled={loading}>
                 {loading ? "Sending..." : "Send"}
               </Button>
+              {message &&
+                <h3 className={`text-sm sm:text-base flex items-center gap-2 ${message.includes("sent") ? "text-green-600" : "text-red-600"}`}>
+                  {message.includes("sent") ? <MdVerified /> : <GiSkullCrossedBones color="text-inherit" />} {message}</h3>
+              }
             </form>
           </div>
 
