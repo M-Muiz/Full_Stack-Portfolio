@@ -1,8 +1,7 @@
+import DownloadCv from "@/components/Home/DownloadCv";
 import Photo from "@/components/Home/Photo";
 import Socials from "@/components/Home/Socials";
 import Stats from "@/components/Home/Stats";
-import { Button } from "@/components/ui/button";
-import { FiDownload } from "react-icons/fi"
 
 
 const page = () => {
@@ -16,10 +15,7 @@ const page = () => {
             <p className="max-w-[500px] mb-9 secondaryText">I&#8242;m a FullStack Developer with a passion for creating interactive and user-friendly web applications.</p>
 
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <Button size="lg" className="flex items-center gap-2 uppercase">
-                  <span> Download CV</span>
-                  <FiDownload className="text-xl" />
-              </Button>
+              <DownloadCv />
               <div className="mb-8 xl:mb-0">
                 <Socials containerStyles='flex gap-6' iconStyles="h-9 w-9 flex items-center justify-center border-2 border-primary rounded-full text-base hover:bg-primary hover:text-white hover:transition-all duration-500" />
               </div>

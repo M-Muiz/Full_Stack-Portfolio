@@ -21,8 +21,8 @@ const projects = [
     stack: [
       { name: "React Js" }, { name: "Css3" }, { name: "Node Js" }, { name: "MongoDb" }, { name: "Cloudinary" }],
     image: "/foodie.png",
-    live: "",
-    github: ""
+    live: "#",
+    github: "#"
   },
   {
     num: "02",

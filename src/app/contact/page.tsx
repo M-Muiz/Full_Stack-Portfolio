@@ -49,7 +49,6 @@ const page = () => {
         "7rZJQACfHvmnUQEgJ"
 
       )
-      console.log(res)
       setLoading(false);
       setMessage("Your Message has been sent successfully.")
 
